@@ -16,11 +16,8 @@ if (app === undefined) {
     console.log('Enter "Basic" or "Cloze" to choose a flash card type.');
 } else if (app.toLowerCase() === "basic") {
 
-    // Basic chooses to save basic Flash Cards
-    console.log('Make a flashcard yo.');
-
     // Questions for front and back
-    var prompts = [{
+    inquirer.prompt [{
         type: "input",
         name: "question",
         message: "What's on the front?"
